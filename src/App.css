@@ -1,0 +1,9 @@
+.row {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.col {
+  padding: 20px;
+  display:inline-block
+}

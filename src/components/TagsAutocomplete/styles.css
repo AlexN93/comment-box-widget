@@ -1,0 +1,70 @@
+.tags-autocomplete {
+    min-width: 350px;
+    display: block;
+}
+
+.input-field {
+    min-height: 24px;
+    min-width: 1px;
+    padding-top: 0;
+    border-radius: 4px;
+    border: 1px solid rgb(29,28,29);
+    text-align: left;
+}
+
+.tag {
+    position: relative;
+    text-decoration:none;
+    background: rgba(var(--sk_highlight_accent,29,155,209),.1);
+    color: rgba(var(--sk_highlight,18,100,163),1);
+    padding: 0 2px 1px 2px;
+    border-radius: 3px;
+}
+
+.tag:hover {
+    background: rgba(var(--sk_highlight_accent, 29, 155, 209), .2);
+    color:rgba(var(--sk_highlight_hover,11,76,140),1);
+
+}
+
+.tag .tooltip {
+    visibility: hidden;
+    display: none;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -48px;
+    left: -40%;
+}
+
+.tag:hover .tooltip {
+    visibility: visible;
+    display: flex;
+}
+
+.tag .tooltip-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.tag .tooltip-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.tag .tooltip .tail {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
